@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/top_hits'
+
+begin
+  cli = TopHits::Cli.new
+  cli.parse
+  cli.run
+rescue => e
+  raise e if $DEBUG
+  STDERR.puts $!
+  STDERR.puts $@
+  exit 1
+end

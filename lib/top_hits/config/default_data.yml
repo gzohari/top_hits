@@ -1,0 +1,22 @@
+providers: 
+  - google:
+      name: google
+      search_url: http://www.google.com
+      search_box_identifier: 
+        name: 'gbqf'
+      result_identifier: '.srg .g'
+      title_identifier: "h3"
+      url_identifier: "cite"
+      description_identifier: ".s .st"
+      next_page_identifier: "#pnnext"
+      
+  - bing:
+      name: bing
+      search_url: http://bing.com
+      search_box_identifier: 
+        action: '/search'
+      result_identifier: '.sb_results .sa_wr'
+      title_identifier: "h3"
+      url_identifier: "cite"
+      description_identifier: "p"
+      next_page_identifier: ".sb_pagN"
